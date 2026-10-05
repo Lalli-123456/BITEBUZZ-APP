@@ -8,7 +8,7 @@ Interactive search bar with instant drop matching, favorites counter with saved 
 Live Radar Sub-ticker:
 Auto-cycling live order ticker ("🔥 Zoe from Seattle ordered 2x Steamed Momos 🥟 3m ago", "Maya in Downtown just ordered 2x Nashville Tenders"), driver count (947 DRIVERS ACTIVE), and average drop stats (18 MINS).
 Hero Section:
-High-impact display typography: GOOD FOOD. GOOD MOOD. NO CAP. 🍔🔥 with electric pink-to-purple gradient.
+High-impact display typography: GOOD FOOD. GOOD MOOD. NO CAP.  with electric pink-to-purple gradient.
 Social proof stack with authentic foodie avatars and 4.9 / 5 from 48.2k+ reviews.
 Bento visual showcase with peelable sticker badges ("YUM! 🤤", "OMG! 🤯", "🔥 Trending", "100% Certified Slap 💯"), highlighting the Lava Smash Burger, Hot Honey Pie, and Spicy Ramen.
 Taste Selector (Categories):
