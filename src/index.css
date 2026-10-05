@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #b40063;
+  --color-primary-container: #e1037d;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fffbff;
+  --color-primary-fixed: #ffd9e3;
+  --color-primary-fixed-dim: #ffb0c9;
+  --color-on-primary-fixed: #3e001e;
+  --color-on-primary-fixed-variant: #8e004c;
+  --color-inverse-primary: #ffb0c9;
+
+  --color-secondary: #7d2dce;
+  --color-secondary-container: #974ce9;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #fffbff;
+  --color-secondary-fixed: #efdbff;
+  --color-secondary-fixed-dim: #dbb8ff;
+  --color-on-secondary-fixed: #2b0052;
+  --color-on-secondary-fixed-variant: #6600b7;
+
+  --color-tertiary: #00657b;
+  --color-tertiary-container: #007f9b;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fafdff;
+  --color-tertiary-fixed: #b6ebff;
+  --color-tertiary-fixed-dim: #47d6ff;
+  --color-on-tertiary-fixed: #001f28;
+
+  --color-surface: #fcf8fd;
+  --color-surface-dim: #dcd9dd;
+  --color-surface-bright: #fcf8fd;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f2f7;
+  --color-surface-container: #f0edf1;
+  --color-surface-container-high: #eae7eb;
+  --color-surface-container-highest: #e4e1e6;
+  --color-surface-variant: #e4e1e6;
+
+  --color-on-surface: #1b1b1e;
+  --color-on-surface-variant: #5a3f48;
+  --color-inverse-surface: #303033;
+  --color-inverse-on-surface: #f3f0f4;
+
+  --color-outline: #8e6f78;
+  --color-outline-variant: #e2bdc7;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --font-syne: 'Syne', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-space: 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fcf8fd;
+    color: #1b1b1e;
+    overflow-x: hidden;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+/* Custom Typography helpers matching design tokens */
+.font-display-hero {
+  font-family: 'Syne', sans-serif;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+.font-display-hero-mobile {
+  font-family: 'Syne', sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+.font-headline-lg {
+  font-family: 'Syne', sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.font-headline-md {
+  font-family: 'Syne', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+.font-headline-sm {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.font-body-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.font-body-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.font-body-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.font-label-lg {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+.font-label-md {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+.font-label-sticker {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+/* Material symbols */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar hide */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

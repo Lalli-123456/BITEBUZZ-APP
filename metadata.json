@@ -1,0 +1,6 @@
+{
+  "name": "BiteBuzz - Viral Street Eats & Midnight Drops",
+  "description": "Hyper-fast comfort drops, viral street food, and TikTok-famous midnight cravings delivered in 20 minutes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
